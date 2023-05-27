@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>PopUp</title>
+</head>
+
+
+<body>
+    <header class="heading">
+    <a id="open" class="material-symbols-outlined" onclick="toggle()">menu</a>
+    <h1 class="main-title">Brent Tech</h1>
+        </header>
+
+        <div class="about">
+            <h1 class="title">Brent V</h1>
+            <p class="description">My first project covering HTML, CSS and simple JavaScript. I'm currently a Senior High School student planning to be a freelancer in front-end web development </p>
+
+
+        </div>
+        <div class="video">
+            <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/8nXqcugV2Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+
+
+    <div id="popup" class="sidebar">
+        <button id="close" class="material-symbols-outlined" onclick="toggle()">close</button>
+        <header class="sidebar-title">Brent Tech</header>
+        <ul>
+        <a href=""><i class="material-symbols-outlined">home</i>Home</a>
+        <a href=""><i class="material-symbols-outlined">dashboard</i>Dashboard</a>
+        <a href=""><i class="material-symbols-outlined">overview</i>Overview</a>
+        <a href=""><i class="material-symbols-outlined">device_hub</i>Services</a>
+        <a href=""><i class="material-symbols-outlined">contact_mail</i>Contact</a>
+        <a href=""><i class="material-symbols-outlined">info</i>About</a>
+            </ul>
+    </div>
+   
+        <script>
+
+            function toggle() {
+                let popup = document.getElementById('popup');
+                popup.classList.toggle('active')
+            }
+
+        </script>
+
+</body>
+</html>
